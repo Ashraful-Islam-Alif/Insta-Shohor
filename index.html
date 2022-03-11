@@ -57,13 +57,12 @@
             <h1>Reported posts</h1>
         </div>
     </main>
-    <section class="container d-flex justify-content-center  ">
-        <div class="card mb-3 " style="width: 100%; height: 100%;">
-            <div class="row g-0 ">
-                <div class="col-md-4 d-flex align-items-center ">
-                    <img src="./image/5u8VS7e.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
+    <hr>
+    <section id="question-answer">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4 mx-auto">
+            <div class="col">
+                <div class="card">
+                    <img src="./image/5u8VS7e.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">1) How does javascript works?</h5>
                         <p class="card-text">Answer: JavaScript works in browser with V8 engine. Inside V8 engine,
@@ -73,19 +72,14 @@
                             code with JIT(Just in Time) compiler. With this it optimized the machine code to bytecode.
                             And by JavaScript
                             garbage collection all unnecessary codes are removed.</p>
-
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card mb-3" style="width: 100%; height: 100%;">
-            <div class="row g-0 ">
-                <div class="col-md-4 d-flex align-items-center ">
-                    <img src="./image/eventloop.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
+            <div class="col">
+                <div class="card">
+                    <img src="./image/eventloop.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> 2) What is Event Loop?</h5>
+                        <h5 class="card-title">2) What is Event Loop?</h5>
                         <p class="card-text">Answer: JavaScript has two things, during runtime, one is stack and another
                             one is Queue. Stack works like,
                             last in first out. Queue works like, first in first out. Event Loop manage the code to run
@@ -93,42 +87,40 @@
                             is also present in Event Loop, where objects are passed to it unstructured ways. And in
                             Event Loop all
                             values from stack returns then returns the value of Queue.In this way Event Loop works.</p>
-
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/LocalStorage.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> 3) Difference between LocalStorage and SessionStorage.</h5>
+                        <h5 class="card-title"> LocalStorage:</h5>
+                        <p class="card-text"> Data is stored permanently untill it is cleared
+                            manually or through a setting. To save
+                            an item in LocalStorage we use
+                            localStorage.setItems(). To retrieve the items from LocalStorage by using
+                            localStorage.getItems(). In a new
+                            tab we can able to retrieve the item from the localStorage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/sessionStorage.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SessionStorage:</h5>
+                        <p class="card-text"> Data is stored in period of time. To save an item in SessionStorage we use
+                            SessionStorage.setItems(). To retrieve the items from SessionStorage by using
+                            SessionStorage.getItems(). In
+                            a new
+                            tab we can't able to retrieve the item from the SessionStorage.</p>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-    <div class="container " style="width: 50%; height: 50%;">
-        <div class="card-group">
-            <div class="card">
-                <img src="./image/LocalStorage.jpg" class="card-img-top img-fluid " alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"> 3) Difference between LocalStorage and SessionStorage.</h5>
-                    <h5 class="card-title"> LocalStorage:</h5>
-                    <p class="card-text"> Data is stored permanently untill it is cleared
-                        manually or through a setting. To save
-                        an item in LocalStorage we use
-                        localStorage.setItems(). To retrieve the items from LocalStorage by using
-                        localStorage.getItems(). In a new
-                        tab we can able to retrieve the item from the localStorage.</p>
 
-                </div>
-            </div>
-            <div class="card">
-                <img src="./image/sessionStorage.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"> SessionStorage:</h5>
-                    <p class="card-text"> Data is stored in period of time. To save an item in SessionStorage we use
-                        SessionStorage.setItems(). To retrieve the items from SessionStorage by using
-                        SessionStorage.getItems(). In
-                        a new
-                        tab we can't able to retrieve the item from the SessionStorage.</p>
-                </div>
-            </div>
-        </div>
-    </div>
     <footer></footer>
 
     <!-- add javascript  file  -->
